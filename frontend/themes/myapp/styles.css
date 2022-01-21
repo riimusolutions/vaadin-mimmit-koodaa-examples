@@ -1,0 +1,16 @@
+@import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+.title-style {
+    color: #baba6f;
+}
+
+.tag-container {
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    flex-flow: row wrap;
+}
