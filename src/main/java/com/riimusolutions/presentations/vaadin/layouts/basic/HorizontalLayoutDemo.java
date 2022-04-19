@@ -19,10 +19,13 @@ public class HorizontalLayoutDemo extends VerticalLayout {
     private final Button searchButton;
 
     public HorizontalLayoutDemo() {
+        setSizeFull();
         Div container = Utils.createBorderContainer();
+        container.setSizeFull();
         add(container);
 
         toolbar = new HorizontalLayout();
+        toolbar.setSizeFull();
         toolbar.setBoxSizing(BoxSizing.BORDER_BOX);
         Utils.setBorder(toolbar, "green");
 

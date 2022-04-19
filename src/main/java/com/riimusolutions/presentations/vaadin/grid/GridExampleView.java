@@ -28,8 +28,6 @@ public class GridExampleView extends VerticalLayout {
         Grid<Ticket> ticketGrid = new Grid<>(Ticket.class);
         ticketGrid.setSizeFull();
         ticketGrid.setItems(ticketService.findAllTickets());
-        ticketGrid.removeColumnByKey("tags");
-
         ticketGrid.setColumns("id", "title", "description");
         ticketGrid.addComponentColumn(this::createStatusBadge)
                 .setHeader("Status")
